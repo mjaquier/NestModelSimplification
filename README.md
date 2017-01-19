@@ -13,9 +13,20 @@ Step 5: `Run NestGIFModel.py` -- This will take the dictionary of parameters gen
 
 Note: You will need to modify the source somewhat to set paths for data. I have made those locations as obvious as possible ex. `'### FILL IN ###'` should be changed to your path. 
 
+Note: If you wish to add visualization to ensure your data works please edit the scripts. In modelfit this can be done by removing comments from `76 # myExp.plotTrainingSet()` && `77 # myExp.plotTestSet()` this will allow you to visualize your generated data. Goodness of fit will automatically be visualized (and pushed to your terminal)
+
+Note: On the subject of goodness of fit. We are using DETERMINISTIC models, GIFFittingToolsBox uses MD (see report refrences) to calculate goodness of fit, this is NOT a appropriate metric for goodness for DETERMINISTIC models. Use Variance Exampled (see report) to assess the models fitting.  
+
 Dataflow: 
 -> Simulator will inject a current vector into the NEURON model and save the required current/voltage response to an HDF5 formated file.
 --> Modelfit will load that dataset, fit it, and save a pickled dictionary with parameters locally
 ---> NestGIFModel will use that pickled dictionary to generate the NEST GIF model of choice
 
 Adendum: The majority of the code base is the `CurrentGenerator.py`. It should function stand-alone without modification. The Simulator will require several small edits to ensure paths && Saved data directories are correct. Please be careful that your saved directories are known to the different scripts. 
+
+Examples: Examples are provided in the `Examples` branch and you can see a slightly outdated by relevant variant I personally utilized here (https://github.com/cigani/NEST/blob/master/L5_TTPC1_cADpyr232_1/Simulator.py)
+
+
+# Warnings
+
+The scripts will NOT function without editing the paths.
