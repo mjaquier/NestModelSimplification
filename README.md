@@ -6,9 +6,9 @@ Step 2: Place scripts from here into the working NEURON model directory
 
 Step 3: `Run Simulator.py` -- Ensuring Optimize Flag is set to "True" %% This will be very time consuming. After optimization you should be given the optimal sigma and base current (`i_e0`) values required. Edit the following lines (line numbering kept to make it easier to find) in place 
 ```Python
- 97         self.sigmamax = <<Your SigmaMax>>>                                                   
- 98         self.sigmamin = <<Your SigmaMin>>                                                   
- 99         self.i_e0 = <<Your Optimal Current>>            
+ 97         self.sigmamax = ### Your SigmaMax ###                                                   
+ 98         self.sigmamin = ### Your SigmaMin ###                                                  
+ 99         self.i_e0 =  ### Your Optimal Current ###           
 ```
 The sigmavalues are also saved to a pickled dictionary which will be saved to a directory of your choice: 
 ```Python
