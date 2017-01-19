@@ -13,7 +13,7 @@ Step 3: `Run Simulator.py` -- Ensuring Optimize Flag is set to "True" %% This wi
 The sigmavalues are also saved to a pickled dictionary which will be saved to a directory of your choice: 
 ```Python
 313         pickle.dump(sigmas, open(                                               
-314             ### YOUR DIRECTOR/PATH HERE ###, "wb"))
+314             ### YOUR PATH HERE ###, "wb"))
 ```
 Now the real data can be collected swap the Optimize flag to "False" (line 358)`Simulator().main(optimize=False)`. And run Simulator again. If you wish to increase the number of runs change (`n`) in the following code (line 335): 
 ```Python
