@@ -18,7 +18,7 @@ Note: On the subject of goodness of fit. We are using DETERMINISTIC models, GIFF
 Visualization: If you wish to add visualization to ensure your data works please edit the scripts. In modelfit this can be done by removing comments from Line 76:`# myExp.plotTrainingSet()` && Line 77:` # myExp.plotTestSet()` this will allow you to visualize your generated data. Goodness of fit will automatically be visualized (and pushed to your terminal). If you wish to visualize the current (A good idea) this can be done very inexpensivly by either modifying `CurrentGenerator.py` with the following lines or writing a small pythong script with the same lines and importing CurrentGenerator:
 ```python
 current = CurrentGenerator(time=100000, optimize_flag=False)                         
-current_vector = [x for x in cg.generate_current()]                                         
+current_vector = [x for x in current.generate_current()]                                         
 plotcurrent(current_vector)
 ```
 This will generate a simple plot of the current over 100,000ms (note: it will generate time/dt points).
