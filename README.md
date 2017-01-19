@@ -4,13 +4,12 @@
 Tested on python 2.7 -- Should run on python 3.x with minimal (if any) fixes.
 
 ## Required libraries
-NEURON: http://www.neuron.yale.edu/neuron/
-NEST: http://www.nest-simulator.org
-h5py: http://www.h5py.org
-Numpy: http://www.numpy.org
+*NEST: http://www.nest-simulator.org
+*h5py: http://www.h5py.org
+*Numpy: http://www.numpy.org
 
 ## Optional libraries
-Seaborn (Pretty Plots): `pip install seaborn`
+*Seaborn (Pretty Plots): `pip install seaborn`
 
 ## Steps
 *Step 1: Download required neuron models Example ((https://bbp.epfl.ch/nmc-portal/microcircuit#/metype/L5_TTPC1_cADpyr/details))
