@@ -46,7 +46,7 @@ Dataflow:
 
 ## Examples
 
-Examples: Examples are provided in the `Examples` branch and you can see a slightly outdated by relevant variant I personally utilized here (https://github.com/cigani/NEST/blob/master/L5_TTPC1_cADpyr232_1/Simulator.py)
+Examples: Examples are provided in the `Examples` branch and you can see a slightly outdated but relevant variant I personally utilized here (https://github.com/cigani/NEST/blob/master/L5_TTPC1_cADpyr232_1/Simulator.py)
 
 ## Depreciated
 
